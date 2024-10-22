@@ -1,0 +1,76 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Organización del menú en una cuadrícula */
+.navigation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Estilo de los elementos del menú (recuadros) */
+.nav-item {
+    background-color: white;
+    color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    width: 150px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Efecto al pasar el ratón por encima de los recuadros */
+.nav-item:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Espacio principal */
+main {
+    padding: 2rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 768px) {
+    .navigation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item {
+        width: 100%;
+        padding: 15px;
+    }
+}
